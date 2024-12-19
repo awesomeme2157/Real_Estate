@@ -47,21 +47,11 @@ function Filter() {
         </div>
         <div className="item">
           <label htmlFor="maxPrice">Max Price</label>
-          <input
-            type="text"
-            id="maxPrice"
-            name="maxPrice"
-            placeholder="any"
-          />
+          <input type="text" id="maxPrice" name="maxPrice" placeholder="any" />
         </div>
         <div className="item">
           <label htmlFor="bedroom">Bedroom</label>
-          <input
-            type="text"
-            id="bedroom"
-            name="bedroom"
-            placeholder="any"
-          />
+          <input type="text" id="bedroom" name="bedroom" placeholder="any" />
         </div>
         <button>
           <img src="/search.png" alt="" />

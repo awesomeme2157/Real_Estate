@@ -8,19 +8,11 @@ function ProfileUpdatePage() {
           <h1>Update Profile</h1>
           <div className="item">
             <label htmlFor="username">Username</label>
-            <input
-              id="username"
-              name="username"
-              type="text"
-            />
+            <input id="username" name="username" type="text" />
           </div>
           <div className="item">
             <label htmlFor="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-            />
+            <input id="email" name="email" type="email" />
           </div>
           <div className="item">
             <label htmlFor="password">Password</label>

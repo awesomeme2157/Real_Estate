@@ -10,7 +10,7 @@ function Register() {
           <input name="username" type="text" placeholder="Username" />
           <input name="email" type="text" placeholder="Email" />
           <input name="password" type="password" placeholder="Password" />
-          <button >Register</button>
+          <button>Register</button>
           <Link to="/login">Do you have an account?</Link>
         </form>
       </div>
