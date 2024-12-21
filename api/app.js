@@ -5,6 +5,7 @@ import cors from "cors";
 
 import postRoutes from "./routes/post.route.js";
 import authRoutes from "./routes/auth.route.js";
+import testRoutes from "./routes/test.route.js";
 
 const app = express();
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(cookieParser());
 
 app.use("/api/posts", postRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/test", testRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");

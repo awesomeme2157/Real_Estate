@@ -78,9 +78,13 @@ export const login = async (req, res) => {
     }
 
     // Create a token
-    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
-      expiresIn: "24h",
-    });
+    const token = jwt.sign(
+      { id: user.id, isAdmin: false },
+      process.env.JWT_SECRET,
+      {
+        expiresIn: "24h",
+      }
+    );
 
     // Send the token in an HTTP-only cookie
     res.cookie("token", token, {
